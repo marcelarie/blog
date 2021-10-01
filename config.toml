@@ -5,11 +5,85 @@ theme = "paper-mod"
 
 [params]
 defaultTheme = "light"
-# defaultTheme: dark
-# defaultTheme: auto
-[params.homeInfoParams]
-Title = "Hi there wave"
-Content = "Can be Info, link"
-# [params.socialIcons]
-# name = "github"
-# url  = "https://github.com/marcelarie"
+env = 'production'
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+comments = true
+# ShowToc = true
+# ShowShareButtons = true
+# disableThemeToggle = true
+# defaultTheme = dark
+# defaultTheme = auto
+# disableSpecial1stPost = true
+
+    [params.editPost]
+    URL = "https://github.com/marcelarie/blog/tree/main/content"
+    text = "fix typo"
+    appendFilePath = true
+
+    [params.homeInfoParams]
+    Title = "welcome to me"
+    Content = """
+Hello! My name is **Marcel** and I'm a 25 y/o software developer from Barcelona,
+Spain.
+
+-
+My journey as a programmer started recently, so there are lots of things
+still to learn. I work with React and TypeScript for my Frontend projects, and
+Node.JS or Rust for the backend. I love equally creating beautiful websites with
+a minimal UI and a solid functionality, and setup performant, efficient and scalable servers and databases.
+
+-
+
+At my blog I explain my learning process to [ really understand it ](https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230),
+sharing it with you to acquire more knowledge from the feedback.
+
+-
+
+Enjoy!
+"""
+        [[params.socialIcons]]
+        name = "github"
+        url  = "https://github.com/marcelarie"
+        [[params.socialIcons]]
+        name = "linkedin"
+        url  = "https://www.linkedin.com/in/marcelarie/"
+        [[params.socialIcons]]
+        name = "paypal"
+        url  = "https://www.paypal.com/paypalme/marcelarie"
+
+[languages]
+    [languages.en]
+    languageName = "English"
+    weight = 1
+
+        [[languages.en.menu.main]]
+        name = "Archive"
+        url = "archives"
+        weight = 5
+
+        [[languages.en.menu.main]]
+        name = "Search"
+        url = "search/"
+        weight = 10
+
+        [[languages.en.menu.main]]
+        name = "Tags"
+        url = "tags/"
+        weight = 10
+
+# search
+    [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1_000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = [ "title", "permalink", "summary", "content" ]
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]

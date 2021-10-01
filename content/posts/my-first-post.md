@@ -1,8 +1,9 @@
----
-title: 'Learn Async/Await in Rust creating a Web Crawler'
-date: 2021-09-29T19:18:38+02:00
-draft: true
----
++++
+date = '2021-10-01T22:57:26+02:00'
+draft = false
+title = 'My First Post'
+
++++
 
 ### What is async-await ?
 
@@ -14,38 +15,26 @@ So for example this will be synchronous code:
 
 ```rust
 fn synchronous_hello() {
-
     println!("hello!");
-
 }
 
-
 fn main() {
-
     let hello = synchronous_hello(); // "hello!" gets printed
-
 }
 ```
 
 ```rust
 use futures::executor::block_on; // we talk about this later :)
 
-
 async fn asynchronous_hello() {
-
     println!("hello!");
-
 }
 
 
 fn main() {
-
     let hello_for_later = asynchronous_hello(); // Nothing gets printed
-
         // ... ton of more code that can be run here
-
     block_on(hello_for_later); // "hello!" gets printed
-
 }
 ```
 
@@ -74,31 +63,19 @@ futures = "0.3"
 ```rust
 use futures::executor::block_on;
 
-
 async fn return_ten() -> u64 { 10 }
 
-
 async fn await_for_ten_or_return_zero() -> u64 {
-
     if return_ten().await == 10 {
-
         10
-
     } else {
-
         0 //
-
     }
-
 }
 
-
 fn main() {
-
    let ten = block_on(await_for_ten());
-
    println!("Finally {} !", ten) // "Finally 10 !" is printed
-
 }
 ```
 
@@ -115,13 +92,9 @@ futures, run them concurrently and return a tuple with the results in order:
 ```rust
 use futures::join;
 
-
 async fn a_and_b() {        // join! just works inside async functions
-
     let a = async { 'a' };
-
     let b = async { 'b' };
-
     join!(a, b); // ('a', 'b')
 
 }
@@ -162,9 +135,7 @@ for the async calls.
 [dependencies]
 
 reqwest = { version = "0.11" }
-
 html5ever = "*"
-
 tokio = { version = "1", features = ["full"] }
 ```
 
