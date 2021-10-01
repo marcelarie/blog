@@ -4,7 +4,7 @@ title = 'marcelarie'
 theme = "paper-mod"
 
 [params]
-defaultTheme = "light"
+defaultTheme = "auto"
 env = 'production'
 ShowReadingTime = true
 displayFullLangName = true
