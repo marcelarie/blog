@@ -12,6 +12,7 @@ ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
 comments = true
+pygmentsUseClasses = false
 # ShowToc = true
 # ShowShareButtons = true
 # disableThemeToggle = true
@@ -87,3 +88,19 @@ Enjoy!
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
+
+[markup]
+  [markup.highlight]
+    noclasses = false
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 4
+    # noClasses = true
+    # style = 'solarized-light'
+    # style = 'solarized-dark'
+    # anchorLineNos = false
+    # codeFences = true
+    # guessSyntax = true
+    # hl_Lines = ''
+    # lineAnchors = ''
+    # lineNoStart = 1

@@ -1,0 +1,45 @@
+.first-entry p {
+    font-size: 1.1rem;
+}
+.entry-content {
+    font-size: 1rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.entry-footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo a {
+    font-weight: 100;
+}
+
+#menu a {
+    font-size: 1.3rem;
+    /*  font-family: 'Roboto', sans-serif;  */
+    text-transform: lowercase;
+}
+
+.post-content {
+    font-size: 1.05rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'EB Garamond', serif;
+}
+
+.post-meta {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+}
+
+.post-content pre code {
+    color: inherit;
+}
+code {
+    padding: 0;
+    border: 1px soldi red;
+}
+
+.footer {
+    text-transform: lowercase;
+}
