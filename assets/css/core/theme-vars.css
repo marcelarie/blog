@@ -1,6 +1,6 @@
 :root {
     --gap: 24px;
-    --content-gap: 20px;
+    --content-gap: 15px;
     --nav-width: 1024px;
     --main-width: 720px;
     --header-height: 60px;
@@ -18,7 +18,22 @@
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
 
-    --main: rgb(111, 175, 152);
+    --main: rgb(175, 58, 3);
+
+    /* syntax highlight */
+    --border: rgba(40, 40, 40, 0.1);
+    --k: rgb(175, 58, 3);
+
+    --bg: #fff;
+    --fg: #1b2b34;
+    --nf: #5b9c90;
+    --kt: #869235;
+    --p: #526f93;
+    --n: #1b2b34;
+    --nx: #a48c32;
+    --s2: #5b9c90;
+    --c1: #a7adba;
+    --s: #b40b11;
 }
 
 .dark {
@@ -35,6 +50,65 @@
     --border: rgb(51, 51, 51);
 
     --main: rgb(250, 189, 47);
+
+    /* syntax highlight */
+    --border: rgba(218, 218, 219, 0.1);
+    --bg: #32302f;
+    --fg: #ddc7a1;
+    --k: #d3869b;
+    --nf: #7daea3;
+    --kt: #d8a657;
+    --p: #b47109;
+    --n: #89b482;
+    --nx: #ea6962;
+    --s2: #a9b665;
+    --c1: #7c6f64;
+    --s: #ea6962;
+}
+
+/* code and syntax highlight */
+.highlight .lntable {
+    border: var(--border) 1px solid;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+.highlight .lnt {
+    opacity: 0.4;
+}
+
+.highlight .k {
+    color: var(--k);
+}
+.highlight .nf {
+    color: var(--nf);
+    font-weight: bold;
+}
+.highlight .p {
+    color: var(--p);
+}
+
+.highlight .kt {
+    color: var(--kt);
+}
+
+.highlight .kd {
+    color: var(--k);
+}
+
+.highlight .n {
+    color: var(--n);
+}
+.highlight .nx {
+    color: var(--nx);
+}
+.highlight .s2 {
+    color: var(--s2);
+}
+.highlight .c1 {
+    color: var(--c1);
+}
+.highlight .s {
+    color: var(--kt);
 }
 
 .list {

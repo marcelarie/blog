@@ -109,17 +109,17 @@ that means that the code will not run on the background and wait for the await,
 but rather run at the moment the await call asks for it. This design follows the
 Rust philoshopy having a better performance and error handeling.
 
-#### So that's it ?
+### So that's it ?
 
 Well, that can be it with the basics but you have a lot more options to work
 asynchronously in Rust. You have multiple frameworks/runtimes, none of them are
 standard:
 
-1. [ Tokio ](https://github.com/tokio-rs/tokio): A popular async ecosystem with
+1. [`Tokio`](https://github.com/tokio-rs/tokio): A popular async ecosystem with
    HTTP, gRPC, and tracing frameworks.
-2. [ async-std ](https://github.com/async-rs/async-std): A crate that provides
+2. [`async-std`](https://github.com/async-rs/async-std): A crate that provides
    asynchronous counterparts to standard library components.
-3. [ smol ](https://github.com/smol-rs/smol): A small, simplified async runtime.
+3. [`smol`](https://github.com/smol-rs/smol): A small, simplified async runtime.
    Provides the Async trait that can be used to wrap structs like UnixStream or
    TcpListener.
 
@@ -130,13 +130,13 @@ more one that looks more popular and standard.
 
 To create a basic crawler we need the following:
 
--   Make HTTP calls
--   Parse HTML code
--   Async calls system
+    -   Make HTTP calls
+    -   Parse HTML code
+    -   Async calls system
 
-We will be using [ reqwest ](https://github.com/seanmonstar/reqwest) for the
-HTTP calls, [ html5ever ](https://github.com/servo/html5ever) for the parsing
-and [ tokio ](https://github.com/tokio-rs/tokio) for the async calls.
+We will be using [`reqwest`](https://github.com/seanmonstar/reqwest) for the
+HTTP calls, [`html5ever`](https://github.com/servo/html5ever) for the parsing
+and [`tokio`](https://github.com/tokio-rs/tokio) for the async calls.
 
 ```toml
 [dependencies]

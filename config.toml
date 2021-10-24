@@ -26,7 +26,7 @@ pygmentsUseClasses = false
     appendFilePath = true
 
     [params.homeInfoParams]
-    Title = "welcome to me"
+    Title = "welcome"
     Content = """
 Hello! My name is **Marcel** and I'm a 25 y/o software developer from Barcelona,
 Spain.
