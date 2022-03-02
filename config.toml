@@ -28,19 +28,26 @@ pygmentsUseClasses = false
     [params.homeInfoParams]
     Title = "welcome"
     Content = """
-Hello! My name is **Marcel** and I'm a 25 y/o software developer from Barcelona,
+Hello! My name is **Marcel** and I'm a 26 y/o software developer from Barcelona,
 Spain.
 
 -
+
 My journey as a programmer started recently, so there are lots of things
 still to learn. I work with React and TypeScript for my Frontend projects, and
-Node.JS or Rust for the backend. I love equally creating beautiful websites with
-a minimal UI and a solid functionality, and setup performant, efficient and scalable servers and databases.
+Node.JS or Rust for the backend.
 
 -
 
-At my blog I explain my learning process to [ really understand it ](https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230),
-sharing it with you to acquire more knowledge from the feedback.
+I equally love creating beautiful websites with
+a minimal UI and a solid functionality, as well as performant, efficient and
+scalable servers and databases.
+
+-
+
+At my blog I explain my learning process to
+[really understand it](https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230),
+any feedback in the comments is welcome.
 
 -
 
