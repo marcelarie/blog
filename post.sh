@@ -9,11 +9,12 @@ if [[ $(pwd) == "/home/marcel/clones/own/blog"  ]]; then
             git add --all && \
             git commit -m "update $(date -u +'%Y-%m-%d %H:%M:%S')" && \
             git push \
-               || $( printf "\nPOST NOT PUBLISHED\n" && \
+               || ( printf "\nPOST NOT PUBLISHED\n" && \
                printf "\n" && \
                echo "possible reasons:" && \
                echo "   - no changes where made" && \
                echo "   - merge conflict" && \
+               echo "   - can't connect to git via ssh" && \
                echo "   - missing package" )
     else
         echo "you may need to install hugo";
