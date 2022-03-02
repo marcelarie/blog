@@ -1,6 +1,6 @@
 baseURL = 'http://marcelarie.github.io/'
 languageCode = 'en-us'
-title = 'marcelarie'
+title = 'my blog'
 theme = "paper-mod"
 
 [params]
