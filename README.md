@@ -4,6 +4,11 @@ made with [hugo](https://github.com/gohugoio/hugo.git)
 
 ## commands
 
+<!-- prettier-ignore -->
+To update changes/posts and deploy run the script [`post.sh`](./post.sh) on the root directory.
+
+Hugo:
+
 -   Create a new page:  
     `hugo new section_name/filename`
 
