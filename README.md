@@ -7,6 +7,13 @@ made with [hugo](https://github.com/gohugoio/hugo.git)
 <!-- prettier-ignore -->
 To update changes/posts and deploy run the script [`post.sh`](./post.sh) on the root directory.
 
+
+This script will run automatically on each commit. The push will only be
+completed if there are changes on the hugo build folder (`./public`). If you want
+to disable this behavior just delete the `.githooks/post-commit` file.
+
+
+
 Hugo:
 
 -   Create a new page:  
