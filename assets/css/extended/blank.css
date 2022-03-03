@@ -46,9 +46,9 @@ code {
 
 .copy-code {
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 0.7rem !important;
-    font-weight: bold;
+    font-weight: 200;
     color: inherit;
     border: 1px solid rgba(78, 78, 78, 0.8);
     background: transparent;
