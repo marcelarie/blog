@@ -97,6 +97,9 @@ Enjoy!
 home = [ "HTML", "RSS", "JSON" ]
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     noclasses = false
     lineNos = true
