@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-if [[ $(pwd) == "/home/marcel/clones/own/blog"  ]]; then
+if  [[ $(pwd) == "/home/marcel/clones/own/blog"  ]] || \
+    [[ $(pwd) == "/home/marcel/clones/pers/blog"  ]]; then
     if [[ $( command -v hugo ) ]]; then
         hugo && \
             cd public && \
