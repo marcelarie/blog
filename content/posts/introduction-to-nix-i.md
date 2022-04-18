@@ -54,7 +54,7 @@ those files on "the cloud", the process of restoring the computer looked like th
 
 I think you get it right?
 
-It was madness. And you would say, well Marcel, maybe if you used a MacOS or a 
+It was madness. And you would say, well Marcel, maybe if you used a macOS or a 
 Windows that will not happen. And you are correct, my life would be simpler. 
 But I am really happy that I didn't do that, because I learned a ton of stuff
 in the process. That and FOSS software it's a lot cooler.
